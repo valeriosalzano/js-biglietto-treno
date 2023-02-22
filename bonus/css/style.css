@@ -2,10 +2,7 @@
     /* color palette */
     --bg-blacklayer : rgba(0,0,0,0.5);
     --bg-gray : #F2F3F7;
-}
 
-/* google font open sans */
-html {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -27,4 +24,63 @@ main header {
 }
 .row.custom-content {
     height: calc(100% - 80px);
+}
+.custom-greenbar::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 15px;
+    background-color: green;
+}
+
+#rotating-icon {
+    animation: icon-rotation 1s 10 linear;
+}
+#timer::before{
+    animation: count-down 10s linear;
+}
+
+@keyframes icon-rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+@keyframes count-down {
+    0% {
+        content: '0:10';
+    }
+    10% {
+        content: '0:09';
+    }
+    20% {
+        content: '0:08';
+    }
+    30% {
+        content: '0:07';
+    }
+    40% {
+        content: '0:06';
+    }
+    50% {
+        content: '0:05';
+    }
+    60% {
+        content: '0:04';
+    }
+    70% {
+        content: '0:03';
+    }
+    80% {
+        content: '0:02';
+    }
+    90% {
+        content: '0:01';
+    }
+    100% {
+        content: '0:00';
+    }
 }

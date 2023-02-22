@@ -1,6 +1,6 @@
 
 const farePerKm = 0.21;
-document.getElementById("ticketFare").innerHTML = farePerKm;
+document.getElementById("ticketFare").innerHTML = `${farePerKm} &euro;`;
 
 const underageDiscount = 20 / 100;
 const seniorDiscount = 40 / 100;
@@ -14,6 +14,7 @@ if (!(isNaN(userAge))) {
     if (!(isNaN(userDistance))) {
         // test passed
 
+        document.getElementById("userDistance").innerHTML = userDistance;
         let price = userDistance * farePerKm;
 
         // discount check
