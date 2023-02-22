@@ -18,6 +18,13 @@ main {
     max-height: 100vh;
 }
 
-main .row {
+main > .container {
     background-color: var(--bg-gray);
+}
+
+main header {
+    height: 80px;
+}
+.row.custom-content {
+    height: calc(100% - 80px);
 }
