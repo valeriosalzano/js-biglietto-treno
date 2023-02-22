@@ -37,10 +37,10 @@ main header {
 }
 
 #rotating-icon {
-    animation: icon-rotation 1s 10 linear;
+    animation: icon-rotation 1s 10 3s linear;
 }
 #timer::before{
-    animation: count-down 10s linear;
+    animation: count-down 10s 3s linear;
 }
 
 @keyframes icon-rotation {

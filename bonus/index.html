@@ -19,14 +19,14 @@
 
      <!-- main -->
      <main class="d-flex align-items-center justify-content-center">
-        <div class="container h-75 border-dark-subtle rounded-4 p-4">
+        <div class="container h-75 border-dark-subtle rounded-4 p-4 overflow-scroll">
             <header>
                 <div class="row justify-content-between">
                     <div class="col">
                         <h1 class="text-uppercase fs-2">Cart</h1>
                     </div>
                     <div class="col text-end" id="timer">
-                        Time left
+                        <span class="fs-6 text-secondary">Time left</span>
                         <i class="ms-2 fa-solid fa-clock-rotate-left" id="timer"></i>
                         <i class="ms-2 fa-solid fa-circle-notch" id="rotating-icon"></i>
                         <button type="button" class="btn btn-close ms-4 shadow-none"></button>
@@ -34,7 +34,7 @@
                 </div>
             </header>
             <div class="row custom-content">
-                <div class="col-5 px-3">
+                <div class="col-md-5 px-3">
                     <div class="row flex-column justify-content-between h-100">
                         <div>
                             <div class="row justify-content-between p-3 position-relative rounded-4 ms-1 custom-greenbar overflow-hidden">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7 px-5">
+                <div class="col-md-7 px-5">
                     <h2 class="text-uppercase">Station A - Station B</h2>
                         <p class="fs-6 text-secondary">22/02/23 &SmallCircle; 1 Adult</p>
                         <p class="fs-5">Fare per kilometer: <span id="ticketFare"></span></p>
