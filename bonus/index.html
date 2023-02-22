@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font open sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/> 
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Train ticket fares</title>
+</head>
+    
+<body>
+
+     <!-- main -->
+     <main class="d-flex align-items-center justify-content-center">
+        <div class="container h-75 border-dark-subtle rounded-4 overflow-hidden">
+            <div class="row h-100">
+                <div class="col-12">
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <h1 class="text-uppercase">Cart</h1>
+                        </div>
+                        <div class="col">
+                            Time left:
+                            timeIcon (animated)
+                            xIcon
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row flex-column justify-content-between h-100">
+                        <div>
+                            <div class="row justify-content-between">
+                                <div>
+                                    <h2 class="text-uppercase">journey</h2>
+                                    <p>Station A - Station B</p>
+                                    <p>Distance: <span id="userDistance"></span></p>
+                                </div>
+                                <div>
+                                    <span id="ticketFare">fare</span>
+                                    <span>deleteIcon</span>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="text-uppercase link-success text-decoration-none" href="#"> +icon Add another journey</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row justify-content-between">
+                                <div class="col">
+                                    <h2 class="text-uppercase">total cart</h2>
+                                    <div id="ticketPrice"></div>
+                                    <p>VAT included</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-danger text-uppercase">
+                                        go to payment
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-8">
+
+                </div>
+            </div>
+        </div>
+        
+    </main>
+            <!-- <p> Fare per kilometer: <span id="ticketFare"></span> &euro;.</p>
+            <p id="ticketDiscount"></p>
+            <p id="ticketPrice"></p> -->
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- my script -->
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+</body>
+
+</html>
